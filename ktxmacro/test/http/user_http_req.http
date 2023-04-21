@@ -1,0 +1,33 @@
+
+### register ( user_info ) 테스트
+POST http://127.0.0.1:8765/ktx/user/register
+Content_Type: application/json
+
+{
+    "id":"1",
+    "user_id": "1jaeman98",
+    "username":"쨈만씨",
+    "email":"jaemanc93@gmail.com",
+    "membership_no":"MB2304200431243",
+    "dflt_dprtr_sttn":"익산",
+    "dflt_arrvl_sttn":"용산",
+    "pay_code":"PC001"
+}
+
+
+### 데이터 조회 테스트
+GET http://127.0.0.1:8765/ktx-timetable?
+    date=20230421&
+    req_numb=1&
+    dprtr_sttn='익산'&
+    arrvl_sttn='용산'
+Content_Type: application/json
+
+
+
+### GET  방식 요청 예시/
+GET http://example.com:8080/api/get/html?
+    firstname=John&
+    lastname=Doe&
+    planet=Tatooine&
+    town=Freetown
